@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/tsj7/netReact/issues"
   },
-  "homepage": "https://github.com/tsj7/netReact#readme"
+  "homepage": "https://github.com/tsj7/netReact#readme",
+  "dependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  }
 }
