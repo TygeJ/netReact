@@ -8,8 +8,7 @@ const ToDoComponent = React.createClass({
     }
   },
   render: function(){
-    le
-     todos = this.state.todos;
+    let todos = this.state.todos;
     todos = todos.map(function(item, index){
       return(
         <li>{item}</li>
