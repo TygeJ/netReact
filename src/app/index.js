@@ -11,7 +11,7 @@ const ToDoComponent = React.createClass({
     let todos = this.state.todos;
     todos = todos.map(function(item, index){
       return(
-        <li>{item}</li>
+        <TodoItem item={item} key={index}/>
       );
     });
     return(
@@ -22,6 +22,19 @@ const ToDoComponent = React.createClass({
     )
   }
 });
+
+// todoItem Component
+const TodoItem = React.createClass({
+  render: function(){
+    return(
+      <li>
+        <div className="todo-item">
+          <span className="item-name">{this.props.item}</span>
+        </div>
+      </li>
+    );
+  }
+})
 
 
 ReactDOM.render(<ToDoComponent />, document.getElementById('todo-wrapper'));
